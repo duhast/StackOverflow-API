@@ -54,4 +54,11 @@ class StackOverflow
     get(@@URL + "tags/synonyms?key=#{@@API_KEY}")
   end
 
+  def self.get_user_badges(user_id)
+    get(@@URL + "users/#{user_id}/badges?key=#{@@API_KEY}")
+  end
+
+  def self.get_badges
+    get(@@URL + "badges?key=#{@@API_KEY}")
+  end
 end
